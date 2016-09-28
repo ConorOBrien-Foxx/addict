@@ -57,6 +57,8 @@ const run = (code, input, output) => {
             variables[name] = variables[name] || 0;
             
             output(fCC(variables[name]));
+            
+            return true;
         },
         // nonstandard
         "n": (name) => {
